@@ -1,6 +1,4 @@
-#!/usr/bin/python
-i = 0
-while i < 69 * 2:
+#!/usr/bin/env python
+for i in range( 69 * 2):
 	print "Mmmm... Toasty"
-	i += 1
 print "...... Delicious"

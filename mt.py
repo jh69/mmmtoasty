@@ -1,6 +1,5 @@
 #!/usr/bin/env python
-import sys, time
-import os
+import sys, time, os, random
 class color:
    RED = '\033[91m'
    BOLD = '\033[1m'
@@ -57,6 +56,15 @@ crack = "\n       PROGRAM IS CRACK BY" + "\n    HACK SQUAD CHECKMATE 1992" + "\n
 mt = 69
 if len(sys.argv) > 1 and sys.argv[1].isdigit():
   mt = int(sys.argv[1])
+for i in range(25):
+	print '\033[1;37;' + str(random.randint(41,46)) + 'm' + (" " * 50)
+	time.sleep(0.05)
+	if i == 12: print ("\033[1;37;41m###############   YOU     ARE  ###################")
+	if i == 13: print ("\033[1;37;41m##############   MOTHER FUCKER   #################")
+print '\033[0m'	
+time.sleep(1)
+os.system('clear')
+
 for i in range(mt):
   print color.RED + skull  + color.END + "\n          Mmmm... Toasty" + crack
   time.sleep(0.4)

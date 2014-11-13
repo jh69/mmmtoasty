@@ -1,5 +1,10 @@
 #!/usr/bin/env python
 import sys, time
+import os
+class color:
+   RED = '\033[91m'
+   BOLD = '\033[1m'
+   END = '\033[0m'
 skull = """      .ed\"\"\"\" \"\"\"\$$$$be.
      -\"           ^\"\"**$$$e.
    .\"                   \'$$$c
@@ -51,9 +56,11 @@ $$$$P d$$$$F $ $$$$$$$$$- $$$$$$
 crack = "\n       PROGRAM IS CRACK BY" + "\n    HACK SQUAD CHECKMATE 1992" + "\n        SERBIA BEST NATION\n"
 mt = 69
 if len(sys.argv) > 1 and sys.argv[1].isdigit():
-	mt = int(sys.argv[1])
+  mt = int(sys.argv[1])
 for i in range(mt):
-	print skull, "\n          Mmmm... Toasty",crack
-	time.sleep(0.5)
-	print skulllaugh, "\n          Mmmm... Toasty",crack
-	time.sleep(0.5)
+  print color.RED + skull  + color.END + "\n          Mmmm... Toasty" + crack
+  time.sleep(0.4)
+  os.system('clear')
+  print color.RED + skulllaugh  + color.END + "\n          Mmmm... Toasty" + crack
+  time.sleep(0.4)
+  os.system('clear')

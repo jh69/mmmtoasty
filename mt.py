@@ -14,7 +14,11 @@ skull = """      .ed\"\"\"\" \"\"\"\$$$$be.
 d$L  4.         4$$$$$$$$$$$$$$b
 $$$$b ^ceeeee.  4$$ECL.F*$$$$$$$
 $$$$P d$$$$F $ $$$$$$$$$- $$$$$$
-3$$$F \"$$$$b   $\"$$$$$$$  $$$$*\"
+3$$$F \"$$"""
+skull = skull + color.END + "O" + color.RED
+skull = skull + "$b   $\"$$$$$"
+skull = skull + color.END + "O" + color.RED
+skull = skull + """$  $$$$*\"
  $$P\"  \"$$b   .$ $$$$$...e$$
   *c    ..    $$ 3$$$$$$$$$$eF
     %ce\"\"    $$$  $$$$$$$$$$*

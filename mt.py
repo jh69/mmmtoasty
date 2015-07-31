@@ -56,21 +56,21 @@ time.sleep(1)
 os.system('clear')
 
 for i in range(mt):
-	if i % 2 == 0:
-		print color.RED + skull + jaw + color.END + "\n          Mmmm... Toasty" + crack
-		time.sleep(0.4)
-		os.system('clear')
-	else:
-		print color.RED + skull + laugh + jaw + color.END + "\n          Mmmm... Toasty" + crack
-		time.sleep(0.4)
-		os.system('clear')
-		
+  if i % 2 == 0:
+    print color.RED + skull + jaw + color.END + "\n\n\n\n        Mmmm... Toasty" + crack
+    time.sleep(0.4)
+    os.system('clear')
+  else:
+    print color.RED + skull + laugh + jaw + color.END + "\n\n        Mmmm... Toasty" + crack
+    time.sleep(0.4)
+    os.system('clear')
+    
 while len(credits) > 1:
-	for i in range(25):
-		if len(credits) < 25:
-			exit()
-		#print len(credits), " ", i
-		print credits[i]
-	time.sleep(0.2)
-	os.system('clear')
-	credits.pop(0)
+  for i in range(25):
+    if len(credits) < 25:
+      exit()
+    #print len(credits), " ", i
+    print credits[i]
+  time.sleep(0.2)
+  os.system('clear')
+  credits.pop(0)

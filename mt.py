@@ -43,11 +43,11 @@ credits = ["","","","","","","","","","","","","","","","","","","","","","","",
 "","","","","","","","","","","","","","","","","","","","","","","","",""]
 
 crack = "\n       PROGRAM IS CRACK BY" + "\n    HACK SQUAD CHECKMATE 1992" + "\n        SERBIA BEST NATION\n"
-mt = 69
+mt = 20
 if len(sys.argv) > 1 and sys.argv[1].isdigit():
     mt = int(sys.argv[1])
 for i in range(25):
-    print '\033[1;37;' + str(random.randint(41,46)) + 'm' + (" " * 50)
+    print '\033[1;37;' + str(random.randint(41,46)) + 'm' + (" " * 50) + "\n",
     time.sleep(0.05)
     if i == 12: print ("\033[1;37;41m###############   YOU     ARE  ###################")
     if i == 13: print ("\033[1;37;41m##############   MOTHER FUCKER   #################")
@@ -70,7 +70,7 @@ while len(credits) > 1:
     if len(credits) < 25:
       exit()
     #print len(credits), " ", i
-    print credits[i]
+    print " " * (40 - len(credits[i])/2) + credits[i]
   time.sleep(0.2)
   os.system('clear')
   credits.pop(0)
